@@ -244,8 +244,7 @@ def create_html(grp):
                     found_course = True
                     break
             if not found_course:
-                if first:
-                    html_content += "<td></td>"  # Pas de cours à cette plage horaire et ce jour
+                html_content += "<td></td>"  # Pas de cours à cette plage horaire et ce jour
         html_content += "</tr>"
 
     # Fermeture de la page HTML
